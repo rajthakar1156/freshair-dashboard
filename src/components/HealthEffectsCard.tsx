@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { AlertCircle, Lungs, Heart, Users, Wind, Activity, User } from 'lucide-react';
+import { AlertCircle, Activity, Heart, Users, Wind, User } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 interface HealthEffect {
@@ -48,7 +47,7 @@ const HealthEffectsCard: React.FC<HealthEffectsCardProps> = ({
         {
           title: 'Respiratory',
           description: 'No respiratory discomfort expected.',
-          icon: <Lungs />,
+          icon: <Activity />,
           severity: 'low'
         },
         {
@@ -69,7 +68,7 @@ const HealthEffectsCard: React.FC<HealthEffectsCardProps> = ({
         {
           title: 'Respiratory',
           description: 'May cause minor breathing discomfort for sensitive individuals.',
-          icon: <Lungs />,
+          icon: <Activity />,
           severity: 'moderate'
         },
         {
@@ -90,7 +89,7 @@ const HealthEffectsCard: React.FC<HealthEffectsCardProps> = ({
         {
           title: 'Respiratory',
           description: 'Increased likelihood of respiratory symptoms in sensitive individuals, aggravation of heart or lung disease.',
-          icon: <Lungs />,
+          icon: <Activity />,
           severity: 'high'
         },
         {
@@ -111,7 +110,7 @@ const HealthEffectsCard: React.FC<HealthEffectsCardProps> = ({
         {
           title: 'Respiratory',
           description: 'Serious aggravation of heart or lung disease and premature mortality in persons with cardiopulmonary disease and the elderly.',
-          icon: <Lungs />,
+          icon: <Activity />,
           severity: 'severe'
         },
         {
